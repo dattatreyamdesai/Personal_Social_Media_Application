@@ -1,0 +1,16 @@
+
+<div class="container">
+    
+    <div class="row">
+     <div class="col-sm-6">
+        <h2> Recent Concerts </h2>
+        <app-post 
+            *ngFor=" let post of listOfPosts; let i = index" 
+            [post]="post" 
+            [index]="i">
+         </app-post>
+     </div>
+    </div>
+  </div>
+
+

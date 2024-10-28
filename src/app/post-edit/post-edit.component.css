@@ -1,0 +1,13 @@
+/* Add some padding to the form */
+.container {
+    margin-left: 10%;
+    margin-top: 50px; /* To move the form a bit downwards */
+}
+
+h3 {
+    text-align: left;
+}
+
+input.ng-invalid.ng-touched, textarea.ng-invalid.ng-touched{
+    border: 2px solid red;
+}

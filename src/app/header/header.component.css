@@ -1,0 +1,11 @@
+/* Superimpose the header over the homepage content */
+.navbar {
+    position: absolute; /* or 'fixed' if you want the header to stay fixed during scroll */
+    top: 0;
+    width: 100%;
+    z-index: 10; /* Ensures it stays on top of other elements */
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    border: none;
+    font-size: 1.2vw;
+  }
+  

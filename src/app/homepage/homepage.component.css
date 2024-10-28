@@ -1,0 +1,72 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+  }
+  
+  .carousel-inner {
+    width: 100vw;
+    height: 100vh;
+  }
+  
+  .carousel img {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;  /* Ensures the image fills the space */
+  }
+  
+  .carousel-wrapper {
+    position: relative;
+  }
+  .overlay-circle {
+    position: absolute;
+    width: 30vw; /* Circle size */
+    height: 30vw; /* Maintain circular shape */
+    background-color: rgba(0, 0, 0, 0.5); /* Transparent background */
+    border-radius: 50%; /* Make the div a circle */
+    z-index: 5; /* Behind the text */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.overlay-circle:hover {
+    background-color: rgba(0, 0, 0, 0.8); /* Darken the background on hover */
+    transform: scale(1.1); /* Slightly enlarge the circle on hover */
+}
+
+.name-container {
+    position: absolute;
+    top: 10vh; /* Adjust positioning */
+    right: 10vw; /* Adjust positioning */
+    width: 30vw; /* Width */
+    height: 30vw; /* Maintain circular shape */
+    z-index: 10;
+}
+
+.overlay-name {
+    color: white;
+    font-size: 4vw; /* Larger text size for the name */
+    font-family: 'Georgia', serif; /* Font style */
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; /* Stack the name and "Flutist" vertically */
+    height: 100%; /* Center text vertically */
+    z-index: 10; /* Ensure text is on top of circle */
+    position: relative;
+    padding-top: 4vw; /* Adjust padding to move the name down */
+}
+
+.name {
+    display: block; /* Ensures the name appears on its own line */
+}
+
+.subtext {
+    font-size: 2vw; /* Smaller font size for "Flutist" */
+    font-family: 'Georgia', serif; /* Use the same font family */
+    font-weight: normal; /* Normal weight for the subtext */
+    margin-top: 0.5vw; /* Space between name and subtext */
+}

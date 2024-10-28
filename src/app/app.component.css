@@ -1,0 +1,16 @@
+/* Prevent scrolling by disabling overflow */
+
+
+/* Ensure the carousel starts after the header */
+.carousel-wrapper {
+  margin-top: 50px; /* Adjust the height of your header, so the carousel doesn't go underneath */
+  width: 100vw;
+  height: calc(100vh - 50px); /* Adjust 50px as per the height of your header */
+  overflow: hidden;
+}
+
+.carousel img {
+  height: 100%;
+  width: 100vw;
+  object-fit: cover;
+}
